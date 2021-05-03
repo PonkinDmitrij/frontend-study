@@ -43,3 +43,5 @@ export default (expression, acc = 0) => {
   const leftOrAcc = left === null ? acc : left;
   return calculate(leftOrAcc, right, operator);
 };
+
+export { operators };
