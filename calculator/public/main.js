@@ -18,7 +18,6 @@ const isCommand = (token) => Object.keys(commands).includes(token);
 
 const isFullExpression = () => {
   const currentOperator = getOperator();
-  console.log('currentOperator :>> ', currentOperator);
   return currentOperator && state.result.split(currentOperator).length > 2;
 };
 
