@@ -1,3 +1,5 @@
+/*#region ==================== $BASE ==================== */
+
 :root {
   --white: #ffffff;
   --black-squeeze: #f7fafc;
@@ -120,10 +122,10 @@ img {
   padding-right: calc(var(--grid-gutter-width) / 2);
   padding-left: calc(var(--grid-gutter-width) / 2);
 }
+/*#endregion*/
 
-/* ========================================
-   $LOGO
-   ======================================== */
+/*#region ==================== $LOGO ==================== */
+
 .logo {
   width: 100px;
   height: 33px;
@@ -132,11 +134,10 @@ img {
 .logo__link {
   display: block;
 }
-/* ===== // LOGO ===== */
+/*#endregion*/
 
-/* ========================================
-   $MAIN-NAV
-   ======================================== */
+/*#region ==================== $MAIN-NAV ==================== */
+
 .main-nav {
   position: relative;
 }
@@ -206,11 +207,10 @@ img {
     display: block;
   }
 }
-/* ===== // MAIN-NAV ===== */
+/*#endregion*/
 
-/* ========================================
-   $PAGE-HEADER
-   ======================================== */
+/*#region ==================== $PAGE-HEADER ==================== */
+
 .page-header {
   position: relative;
   padding-top: 26px;
@@ -260,4 +260,7 @@ img {
     width: 100px;
   }
 }
-/* ===== // PAGE-HEADER ===== */
+/*#endregion*/
+
+/*#region*/
+/*#endregion*/
