@@ -62,6 +62,29 @@ img {
   clip-path: inset(100%);
 }
 
+.btn {
+  display: inline-block;
+  padding: 30px 70px;
+  border: none;
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  color: var(--white);
+  background-color: var(--can-can);
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--coral-tree);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
 .page-wrapper {
   display: flex;
   flex-direction: column;
