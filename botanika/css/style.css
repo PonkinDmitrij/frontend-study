@@ -392,5 +392,116 @@ img {
 }
 /*#endregion*/
 
+/*#region ==================== $FEATURES ==================== */
+
+.features {
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+@media (max-width: 575px) {
+  .features {
+    padding-top: 0;
+  }
+}
+
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 800px) {
+  .features__list {
+    display: block;
+  }
+}
+
+.features__item {
+  flex: 0 0 32.17%;
+  display: flex;
+}
+
+@media (max-width: 1080px) {
+  .features__item {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .features__item {
+    flex-direction: row;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .features__item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}
+
+.features__item::before {
+  content: '';
+  flex-shrink: 0;
+  width: 82px;
+  height: 52px;
+  margin-right: 20px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1080px) {
+  .features__item::before {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .features__item::before {
+    margin: 0;
+    margin-right: 20px;
+  }
+}
+
+.features__item--fast::before {
+  background-image: url(../img/icons/icon-car.svg);
+  background-position: center;
+}
+
+.features__item--fresh::before {
+  background-image: url(../img/icons/icon-bouquet.svg);
+  background-position: right;
+}
+
+@media (max-width: 1080px) {
+  .features__item--fresh::before {
+    background-position: center;
+  }
+}
+
+.features__item--photo::before {
+  background-image: url(../img/icons/icon-photo.svg);
+  background-position: right;
+}
+
+@media (max-width: 1080px) {
+  .features__item--photo::before {
+    background-position: center;
+  }
+}
+
+.features__item-title {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.features__item-text {
+  margin: 0;
+}
+/*#endregion*/
+
 /*#region*/
 /*#endregion*/
