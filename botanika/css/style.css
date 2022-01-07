@@ -673,5 +673,109 @@ img {
 }
 /*#endregion*/
 
+/*#region ==================== $CATALOG-NAV ==================== */
+
+.catalog-nav {
+  padding-top: 36px;
+  padding-bottom: 40px;
+}
+
+.catalog-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-nav__item {
+  flex: 0 0 32.2%;
+}
+
+@media (max-width: 800px) {
+  .catalog-nav__item {
+    flex-basis: 47%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .catalog-nav__item {
+    flex-basis: 65%;
+    margin: 20px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-nav__item {
+    flex-basis: 80%;
+  }
+}
+
+.catalog-nav__link {
+  position: relative;
+  display: block;
+  padding-top: 114.5%;
+  text-decoration: none;
+  text-align: center;
+  color: var(--white);
+  background-color: var(--coral-tree);
+  background: var(--coral-tree) center / cover no-repeat;
+  border-radius: 10px;
+}
+
+.catalog-nav__link::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--coral-tree);
+  opacity: 0.6;
+  border-radius: 10px;
+}
+
+.catalog-nav__link--wedding {
+  background-image: url(../img/sammi.jpg);
+}
+
+.catalog-nav__link--peonies {
+  background-image: url(../img/fresh-beautiful-peony-flowers-vase.jpg);
+}
+
+.catalog-nav__link--choice {
+  background-image: url(../img/alyssa-strohmann.jpg);
+}
+
+.catalog-nav__link-text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.catalog-nav__link-title {
+  margin-bottom: 7px;
+  font-family: var(--font-family--serif);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 800px) {
+  .catalog-nav__link-title {
+    font-size: 26px;
+  }
+}
+/*#endregion*/
+
 /*#region*/
 /*#endregion*/
