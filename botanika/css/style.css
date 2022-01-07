@@ -777,5 +777,114 @@ img {
 }
 /*#endregion*/
 
+/*#region ==================== $DISCOUNT ==================== */
+
+.discount {
+  padding: 40px 0;
+}
+
+.discount__layout {
+  display: flex;
+}
+
+@media (max-width: 575px) {
+  .discount__layout {
+    display: block;
+  }
+}
+
+.discount__text {
+  flex: 0 0 50.8%;
+  padding: 40px 102px 60px;
+  color: var(--white);
+  background-color: var(--coral-tree);
+}
+
+@media (max-width: 1080px) {
+  .discount__text {
+    padding: 60px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .discount__text {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .discount__text {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .discount__text {
+    width: 100%;
+  }
+}
+
+.discount__title {
+  margin: 0;
+  margin-bottom: 22px;
+  font-family: var(--font-family--serif);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 1080px) {
+  .discount__title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 800px) {
+  .discount__title {
+    font-size: 26px;
+  }
+}
+
+.discount__desc {
+  margin: 0;
+  font-size: 24px;
+}
+
+@media (max-width: 1080px) {
+  .discount__desc {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .discount__desc {
+    font-size: 18px;
+  }
+}
+
+.discount__bg {
+  flex: 0 0 49.2%;
+  background: url(../img/florist-makes-beautiful-bouquet-studio.jpg) center /
+    cover no-repeat;
+}
+
+@media (max-width: 575px) {
+  .discount__bg {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .discount__bg {
+    width: 100%;
+  }
+}
+/*#endregion*/
+
 /*#region*/
 /*#endregion*/
