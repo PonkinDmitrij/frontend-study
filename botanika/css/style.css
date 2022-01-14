@@ -977,5 +977,39 @@ img {
 }
 /*#endregion*/
 
+/*#region ==================== $SOCIALS ==================== */
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socials__link path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.socials__link:hover path,
+.socials__link:focus path {
+  fill: var(--coral-tree);
+}
+
+.socials__link:active path {
+  fill: var(--cosmos);
+}
+/*#endregion*/
+
 /*#region*/
 /*#endregion*/
