@@ -80,3 +80,22 @@ const runSlider = () => {
 
 toggleNav();
 runSlider();
+
+// ------------------------------ Map ----------------------------------
+
+const center = [59.93863506417266, 30.323117499999945];
+
+function init() {
+  const map = new ymaps.Map('map', {
+    center: center,
+    zoom: 17,
+  });
+
+  map.controls.remove('geolocationControl');
+  map.behaviors.disable(['scrollZoom']);
+  map.controls.remove('searchControl');
+  map.controls.remove('typeSelector');
+  map.controls.remove('trafficControl');
+}
+
+ymaps.ready(init);
