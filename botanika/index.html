@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Botanika</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <main class="page-content">
+        <h1 class="visually-hidden">Цветочный магазин "Botanika"</h1>
+
+        <header class="page-header">
+          <div class="container page-header__layout">
+            <div class="page-header__logo">
+              <div class="logo">
+                <a class="logo__link">
+                  <img src="./img/logo.svg" alt="Логотип цветочного магазина Botanika" />
+                </a>
+              </div>
+            </div>
+
+            <div class="page-header__nav">
+              <nav class="main-nav">
+                <ul class="main-nav__list">
+                  <li>
+                    <a class="main-nav__link" href="javascript:void(0)">Каталог</a>
+                  </li>
+                  <li>
+                    <a class="main-nav__link" href="javascript:void(0)">Доставка и оплата</a>
+                  </li>
+                  <li>
+                    <a class="main-nav__link" href="javascript:void(0)">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="main-nav__link" href="javascript:void(0)">Спецпредложения</a>
+                  </li>
+                  <li>
+                    <a class="main-nav__link" href="javascript:void(0)">Контакты</a>
+                  </li>
+                  <li>
+                    <a class="main-nav__link" href="javascript:void(0)">Корзина</a>
+                  </li>
+                </ul>
+
+                <button class="main-nav__toggle" type="button">
+                  <span class="visually-hidden">Меню</span>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        <section class="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col intro__col intro__col-text">
+                <div>
+                  <h2 class="intro__title">
+                    Авторские букеты
+                    <span>в Петербурге</span>
+                  </h2>
+                  <p class="intro__desc">Оригинальные свежие букеты с доставкой по всему городу</p>
+                  <p class="intro__link-wrap">
+                    <a class="btn intro__link" href="javascript:void(0)">Смотреть каталог</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="col intro__col intro__col-photo intro__col-photo--1">
+                <div class="intro__photo intro__photo--1 intro__photo--shift">
+                  <img src="./img/anna-tukhfatullina.jpg" alt="" />
+                </div>
+              </div>
+
+              <div class="col intro__col intro__col-photo">
+                <div class="intro__photo intro__photo--2">
+                  <img src="./img/taisiia-shestopal.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features">
+          <div class="container">
+            <h2 class="visually-hidden">Преимущества</h2>
+
+            <ul class="features__list">
+              <li class="features__item features__item--fast">
+                <div>
+                  <h3 class="features__item-title">Быстрая доставка</h3>
+                  <p class="features__item-text">Можем собрать букет и передать его в доставку всего за час.</p>
+                </div>
+              </li>
+
+              <li class="features__item features__item--fresh">
+                <div>
+                  <h3 class="features__item-title">Всегда свежие цветы</h3>
+                  <p class="features__item-text">
+                    Тщательно следим за состоянием цветов, а опытные флористы отбирают для букетов каждый цветок.
+                  </p>
+                </div>
+              </li>
+
+              <li class="features__item features__item--photo">
+                <div>
+                  <h3 class="features__item-title">Отправляем фото цветов</h3>
+                  <p class="features__item-text">Перед доставкой сделаем фотографию букета и отправим вам.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="popular">
+          <div class="container">
+            <h2 class="popular__title">Популярные букеты</h2>
+
+            <div class="slider popular__slider">
+              <ul class="slider__inner popular__list">
+                <li class="slider__item">
+                  <div class="popular__item">
+                    <div class="popular__item-text">
+                      <h3 class="popular__item-title">Букет «Нежность»</h3>
+                      <p class="popular__item-desc">
+                        Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+                      </p>
+                      <p class="popular__item-size">30 × 40 см</p>
+                      <p class="popular__item-price">3600 руб.</p>
+                      <a class="btn popular__item-order" href="javascript:void(0)">Заказать</a>
+                    </div>
+
+                    <div class="popular__item-photo">
+                      <div class="popular__item-img-wrap">
+                        <img class="popular__item-img" src="./img/slide-1.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="popular__item">
+                    <div class="popular__item-text">
+                      <h3 class="popular__item-title">Букет «Важность»</h3>
+                      <p class="popular__item-desc">
+                        Элегантный букет, который станет отличным подарком на день рождения или юбилей. Элегантный
+                        букет, который станет отличным подарком на день рождения или юбилей.
+                      </p>
+                      <p class="popular__item-size">30 × 40 см</p>
+                      <p class="popular__item-price">4200 руб.</p>
+                      <a class="btn popular__item-order" href="javascript:void(0)">Заказать</a>
+                    </div>
+
+                    <div class="popular__item-photo">
+                      <div class="popular__item-img-wrap">
+                        <img class="popular__item-img" src="./img/alyssa-strohmann.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+
+                <li class="slider__item">
+                  <div class="popular__item">
+                    <div class="popular__item-text">
+                      <h3 class="popular__item-title">Букет «Ложность»</h3>
+                      <p class="popular__item-desc">
+                        Элегантный букет, который станет отличным подарком на день рождения или юбилей.
+                      </p>
+                      <p class="popular__item-size">30 × 40 см</p>
+                      <p class="popular__item-price">2100 руб.</p>
+                      <a class="btn popular__item-order" href="javascript:void(0)">Заказать</a>
+                    </div>
+
+                    <div class="popular__item-photo">
+                      <div class="popular__item-img-wrap">
+                        <img class="popular__item-img" src="./img/fresh-beautiful-peony-flowers-vase.jpg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="slider__controls">
+                <button class="slider__control slider__control--prev" disabled>
+                  <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M0.292892 8.70711C-0.0976295 8.31658 -0.0976295 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM51 9H1V7H51V9Z"
+                      fill="#AE7C78"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Предыдущий</span>
+                </button>
+
+                <button class="slider__control slider__control--next">
+                  <svg width="51" height="16" viewBox="0 0 51 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M50.7071 8.70711C51.0976 8.31658 51.0976 7.68342 50.7071 7.29289L44.3431 0.928932C43.9526 0.538408 43.3195 0.538408 42.9289 0.928932C42.5384 1.31946 42.5384 1.95262 42.9289 2.34315L48.5858 8L42.9289 13.6569C42.5384 14.0474 42.5384 14.6805 42.9289 15.0711C43.3195 15.4616 43.9526 15.4616 44.3431 15.0711L50.7071 8.70711ZM0 9H50V7H0V9Z"
+                      fill="#AE7C78"
+                    />
+                  </svg>
+                  <span class="visually-hidden">Следующий</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="catalog-nav">
+          <div class="container">
+            <h2 class="visually-hidden">Разделы каталога</h2>
+            <ul class="catalog-nav__list">
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--wedding" href="javascript:void(0)">
+                  <span class="catalog-nav__link-text">
+                    <span class="catalog-nav__link-title">Свадебные букеты</span>
+                    <span>Букеты для невест</span>
+                  </span>
+                </a>
+              </li>
+
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--peonies" href="javascript:void(0)">
+                  <span class="catalog-nav__link-text">
+                    <span class="catalog-nav__link-title">Букеты с пионами</span>
+                    <span>Букеты с сезонными пионами</span>
+                  </span>
+                </a>
+              </li>
+
+              <li class="catalog-nav__item">
+                <a class="catalog-nav__link catalog-nav__link--choice" href="javascript:void(0)">
+                  <span class="catalog-nav__link-text">
+                    <span class="catalog-nav__link-title">Выбрать букет</span>
+                    <span>Букеты в ассортименте</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="discount">
+          <div class="container discount__layout">
+            <div class="discount__text">
+              <h2 class="discount__title">
+                Скидка 10%
+                <br />
+                на первый заказ
+              </h2>
+              <p class="discount__desc">
+                Если заказываете у нас букет впервые — при оформлении заказа введите промокод «Botanika2021» и получите
+                скидку 10%.
+              </p>
+            </div>
+            <div class="discount__bg"></div>
+          </div>
+        </section>
+
+        <section class="steps">
+          <div class="container">
+            <h2 class="steps__title">4 шага к идеальному букету</h2>
+
+            <ul class="steps__list">
+              <li class="steps__item steps__item--order">
+                <h3 class="steps__item-title">Заказ</h3>
+                <p class="steps__item-desc">Выберите понравившийся букет из каталога и оформите заказ</p>
+              </li>
+
+              <li class="steps__item steps__item--details">
+                <h3 class="steps__item-title">Уточнение деталей</h3>
+                <p class="steps__item-desc">Наш флорист позвонит вам после оформления заказа, чтобы уточнить детали</p>
+              </li>
+
+              <li class="steps__item steps__item--payment">
+                <h3 class="steps__item-title">Оплата</h3>
+                <p class="steps__item-desc">Оплатить заказ можно онлайн на сайте или при получении</p>
+              </li>
+
+              <li class="steps__item steps__item--delivery">
+                <h3 class="steps__item-title">Доставка</h3>
+                <p class="steps__item-desc">Курьер позвонит за час до прибытия и доставит заказ вовремя</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container news__layout">
+            <div class="news__text">
+              <h2 class="news__title">Следите за нашими новостями</h2>
+
+              <p class="news__desc">Подписывайтесь на наши соцсети и узнавайте о новинках и акциях первым.</p>
+
+              <ul class="socials">
+                <li class="socials__item">
+                  <a class="socials__link" href="javascript:void(0)">
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5.846 0C2.622 0 0 2.604 0 5.804v8.393C0 17.397 2.622 20 5.846 20h8.505c3.224 0 5.846-2.603 5.846-5.803V5.804c0-3.2-2.622-5.804-5.846-5.804H5.846Zm0 1.72h8.505c2.295 0 4.115 1.807 4.115 4.084v8.393c0 2.278-1.82 4.084-4.115 4.084H5.846c-2.295 0-4.114-1.806-4.114-4.084V5.804c0-2.277 1.82-4.085 4.114-4.085Zm9.673 1.719c-.67 0-1.211.538-1.211 1.202 0 .664.542 1.202 1.21 1.202.67 0 1.212-.538 1.212-1.202 0-.664-.542-1.202-1.211-1.202Zm-5.42 1.412C7.243 4.85 4.91 7.166 4.91 10s2.333 5.15 5.188 5.15c2.854 0 5.188-2.316 5.188-5.15 0-2.834-2.334-5.15-5.189-5.15Zm0 1.719A3.43 3.43 0 0 1 13.554 10a3.43 3.43 0 0 1-3.457 3.43A3.43 3.43 0 0 1 6.643 10a3.43 3.43 0 0 1 3.455-3.43Z"
+                        fill="#D89999"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Instagram</span>
+                  </a>
+                </li>
+
+                <li class="socials__item">
+                  <a class="socials__link" href="javascript:void(0)">
+                    <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M8.46 0C5.456 0 3.4 1.656 3.4 4.7v2.622H0v3.556h3.399V20H7.46v-9.122h3.39l.509-3.556H7.46V5.05c0-1.03.317-1.731 1.951-1.731h2.083V.14C11.136.097 9.9 0 8.46 0Z"
+                        fill="#D89999"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Facebook</span>
+                  </a>
+                </li>
+
+                <li class="socials__item">
+                  <a class="socials__link" href="javascript:void(0)">
+                    <svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M25.759 2.367c-.947.402-1.966.673-3.035.796 1.09-.626 1.928-1.615 2.323-2.794-1.02.58-2.151.999-3.356 1.225A5.394 5.394 0 0 0 17.834 0c-2.918 0-5.284 2.26-5.284 5.049 0 .396.047.781.137 1.15C8.295 5.99 4.401 3.98 1.795.925a4.853 4.853 0 0 0-.716 2.538c0 1.752.933 3.297 2.351 4.203a5.444 5.444 0 0 1-2.393-.632l-.001.064c0 2.447 1.821 4.487 4.239 4.951a5.517 5.517 0 0 1-2.387.086c.673 2.006 2.624 3.466 4.937 3.507a10.925 10.925 0 0 1-6.564 2.161c-.426 0-.847-.024-1.261-.07A15.473 15.473 0 0 0 8.101 20c9.72 0 15.035-7.693 15.035-14.366 0-.219-.005-.436-.015-.653a10.51 10.51 0 0 0 2.637-2.614"
+                        fill="#D89999"
+                      />
+                    </svg>
+                    <span class="visually-hidden">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="news__gallery">
+              <div class="news-gallery">
+                <div class="news-gallery__inner">
+                  <div class="news-gallery__small">
+                    <div class="news-gallery__img-wrap">
+                      <img class="news-gallery__img" src="./img/samantha-gades.jpg" alt="" />
+                    </div>
+                    <div class="news-gallery__img-wrap">
+                      <img class="news-gallery__img" src="./img/insung-yoon.jpg" alt="" />
+                    </div>
+                  </div>
+
+                  <div class="news-gallery__big">
+                    <img class="news-gallery__img" src="./img/demi-he.jpg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feedback">
+          <div class="container">
+            <div class="feedback__inner">
+              <h2 class="feedback__title">Отзывы</h2>
+
+              <ul class="feedback__list">
+                <li class="feedback__item">
+                  <blockquote class="feedback__item-wrap">
+                    <p class="feedback__item-text">
+                      Всё очень понравилось! Быстрое оформление заказа, выбор удобного времени доставки. Всем большое
+                      спасибо!
+                    </p>
+                    <p class="feedback__item-author">Марина</p>
+                  </blockquote>
+                </li>
+
+                <li class="feedback__item">
+                  <blockquote class="feedback__item-wrap">
+                    <p class="feedback__item-text">
+                      Внимательные флористы, вежливые. Магазин находится прям рядом с метро. Букет очень понравился,
+                      буду ещё заказывать!
+                    </p>
+                    <p class="feedback__item-author">Татьяна</p>
+                  </blockquote>
+                </li>
+
+                <li class="feedback__item">
+                  <blockquote class="feedback__item-wrap">
+                    <p class="feedback__item-text">
+                      Выбор букетов на любой вкус и цену. Бывают хорошие скидки, а флористы всегда помогут и точно
+                      соберут красивый букет!
+                    </p>
+                    <p class="feedback__item-author">Ольга</p>
+                  </blockquote>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <div class="container contacts__layout">
+            <div class="contacts__text">
+              <h2 class="contacts__title">Мы ждем вас</h2>
+
+              <p class="contacts__key">Приходите к нам:</p>
+              <p class="contacts__value">
+                Санкт-Петербург,
+                <br />
+                ул. Большая Конюшенная, 19
+              </p>
+
+              <p class="contacts__key">Режим работы:</p>
+              <p class="contacts__value">Пн-Вск, с 9-00 до 20-00</p>
+
+              <p class="contacts__key">Позвоните нам:</p>
+              <p class="contacts__value">
+                <a class="contacts__link" href="tel:+78129834719">+ 7 (812) 983-47-19</a>
+              </p>
+
+              <p class="contacts__key">Напишите нам:</p>
+              <p class="contacts__value">
+                <a class="contacts__link" href="mailto:info@botanika.ru">info@botanika.ru</a>
+              </p>
+            </div>
+          </div>
+          <div class="contacts__inner">
+            <div class="contacts__map" id="map"></div>
+          </div>
+        </section>
+      </main>
+
+      <div class="page-footer-wrapper"></div>
+    </div>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
