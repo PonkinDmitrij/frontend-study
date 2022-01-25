@@ -1001,6 +1001,10 @@ img {
   transition: fill 0.3s ease-in-out;
 }
 
+.socials--footer .socials__link path {
+  fill: var(--white);
+}
+
 .socials__link:hover path,
 .socials__link:focus path {
   fill: var(--coral-tree);
@@ -1008,6 +1012,15 @@ img {
 
 .socials__link:active path {
   fill: var(--cosmos);
+}
+
+.socials--footer .socials__link:hover path,
+.socials--footer .socials__link:focus path {
+  fill: var(--cosmos);
+}
+
+.socials--footer .socials__link:active path {
+  fill: var(--can-can);
 }
 /*#endregion*/
 
