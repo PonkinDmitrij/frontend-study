@@ -1,0 +1,1 @@
+const o=1+3;console.log(o);
