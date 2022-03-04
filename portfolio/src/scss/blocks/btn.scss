@@ -1,0 +1,29 @@
+.btn {
+  display: inline-block;
+  min-width: 220px;
+  padding: 6px 30px 5px;
+  border: 2px solid var(--btn-border);
+  font: inherit;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  cursor: pointer;
+  transition: color var(--transition), background-color var(--transition),
+    border-color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--white);
+  }
+
+  &:active {
+    background-color: var(--primary-color-dark);
+  }
+
+  &--transparent {
+    color: var(--primary-color);
+    background-color: transparent;
+  }
+}
