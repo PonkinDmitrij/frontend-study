@@ -1,0 +1,30 @@
+.custom-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--primary-color);
+
+  @media (max-width: $screen-md) {
+    max-width: 364px;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 50px;
+    height: 2px;
+    background-color: var(--primary-color);
+  }
+
+  &::before {
+    margin-right: 20px;
+  }
+
+  &::after {
+    margin-left: 20px;
+  }
+}
