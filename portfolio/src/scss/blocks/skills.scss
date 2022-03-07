@@ -1,0 +1,65 @@
+.skills {
+  padding-top: 100px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    flex: 0 0 22.86%;
+  }
+}
+
+.skill {
+  position: relative;
+  padding: 100px 20px 10px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -33px;
+    width: 66px;
+    height: 50px;
+    background: transparent center / contain no-repeat;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font: inherit;
+    font-weight: 700;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  &--photography::before {
+    background-image: url(../img/bg/icon-camera.svg);
+  }
+
+  &--video::before {
+    background-image: url(../img/bg/icon-video.svg);
+  }
+
+  &--retouch::before {
+    background-image: url(../img/bg/icon-image.svg);
+  }
+
+  &--audio::before {
+    background-image: url(../img/bg/icon-mic.svg);
+  }
+}
