@@ -1,0 +1,37 @@
+.contact {
+  min-height: 700px;
+  padding: 60px 0;
+  background: var(--black) url(../img/bg/contact-bg.jpg) center/cover no-repeat;
+
+  &__col {
+    width: 450px;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+  }
+
+  &__field {
+    width: 100%;
+    padding: 3px 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--primary-color);
+    font: inherit;
+    color: var(--primary-color);
+    background-color: rgb(0 0 0 / 0.5);
+
+    &::placeholder {
+      color: var(--primary-color);
+    }
+
+    &--textarea {
+      display: block;
+      height: 100px;
+      margin-bottom: 30px;
+      resize: vertical;
+    }
+  }
+}
