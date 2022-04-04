@@ -1,0 +1,24 @@
+.page-footer {
+  padding: 50px 0;
+  line-height: 2.5;
+
+  &__copyright {
+    flex: 0 0 16.66%;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  &__links {
+    flex: 0 0 41.66%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__socials {
+    flex: 0 0 41.66%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
