@@ -1,0 +1,12 @@
+.video {
+  padding-top: 75px;
+  padding-bottom: 25px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__video-player {
+    --aspect-ratio: 1400 / 705;
+  }
+}
