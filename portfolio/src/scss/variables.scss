@@ -61,3 +61,12 @@ $screen-lg:                    992px;
 $screen-md:                    768px;
 $screen-sm:                    576px;
 $screen-xs:                    480px;
+
+
+
+@media (max-width: $screen-md) {
+  :root {
+    --font-size-h1:              32px;
+    --font-size-h2:              32px;
+  }
+}
