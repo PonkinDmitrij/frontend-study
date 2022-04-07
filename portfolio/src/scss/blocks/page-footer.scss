@@ -2,8 +2,19 @@
   padding: 50px 0;
   line-height: 2.5;
 
+  @media (max-width: $screen-md) {
+    padding: 28px 0;
+    line-height: 1.21;
+    text-align: center;
+  }
+
   &__copyright {
     flex: 0 0 16.66%;
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      margin-bottom: 16px;
+    }
 
     & p {
       margin: 0;
@@ -14,11 +25,22 @@
     flex: 0 0 41.66%;
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
   }
 
   &__socials {
     flex: 0 0 41.66%;
     display: flex;
     justify-content: flex-end;
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      justify-content: center;
+    }
   }
 }
