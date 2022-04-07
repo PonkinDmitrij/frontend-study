@@ -1,8 +1,16 @@
 .price {
   padding: 75px 0 100px;
 
+  @media (max-width: $screen-md) {
+    padding: 90px 0 31px;
+  }
+
   &__title {
     margin-bottom: 60px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 70px;
+    }
   }
 
   &__list {
@@ -10,10 +18,23 @@
     margin-bottom: 0;
     padding: 0;
     list-style: none;
+
+    @media (max-width: $screen-lg) {
+      justify-content: center;
+    }
   }
 
   &__item {
     flex: 0 0 33.33%;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 50%;
+    }
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      max-width: 444px;
+    }
   }
 }
 
@@ -21,6 +42,10 @@
   padding: 40px 20px;
   border: 3px solid var(--primary-color);
   text-align: center;
+
+  @media (max-width: $screen-lg) {
+    margin-bottom: 50px;
+  }
 
   &__title {
     margin: 0;
