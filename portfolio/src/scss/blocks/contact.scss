@@ -3,9 +3,25 @@
   padding: 60px 0;
   background: var(--black) url(../img/bg/contact-bg.jpg) center/cover no-repeat;
 
+  @media (max-width: $screen-md) {
+    background-image: url(../img/bg/contact-bg-tablet.jpg);
+    min-height: 600px;
+  }
+
+  @media (max-width: $screen-sm) {
+    background-position: 0 50%;
+  }
+
   &__col {
     width: 450px;
     margin-left: auto;
+
+    @media (max-width: $screen-md) {
+      margin: 0 auto;
+      width: auto;
+      max-width: 450px;
+      text-align: center;
+    }
   }
 
   &__title {

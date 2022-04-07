@@ -228,10 +228,17 @@
               <h2 class="contact__title">Contact me</h2>
               <form action="#" method="post">
                 <label class="visually-hidden" for="e-mail">E-mail</label>
-                <input class="contact__field" id="e-mail" type="text" name="E-mail" placeholder="E-mail" />
+                <input
+                  class="contact__field"
+                  id="e-mail"
+                  type="email"
+                  name="E-mail"
+                  inputmode="email"
+                  placeholder="E-mail"
+                />
 
                 <label class="visually-hidden" for="phone">Phone</label>
-                <input class="contact__field" id="phone" type="text" name="phone" placeholder="Phone" />
+                <input class="contact__field" id="phone" type="tel" name="phone" inputmode="tel" placeholder="Phone" />
 
                 <label class="visually-hidden" for="message">Message</label>
                 <textarea
