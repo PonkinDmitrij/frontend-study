@@ -1,8 +1,16 @@
 .portfolio {
   padding-top: 100px;
 
+  @media (max-width: $screen-md) {
+    padding-top: 104px;
+  }
+
   &__title {
     margin-bottom: 60px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 70px;
+    }
   }
 
   &__buttons {
@@ -11,6 +19,12 @@
     justify-content: center;
     gap: 5px;
     margin-bottom: 60px;
+
+    @media (max-width: $screen-lg) {
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__btn-active {
@@ -33,10 +47,23 @@
     margin-bottom: 0;
     padding: 0;
     list-style: none;
+
+    @media (max-width: $screen-lg) {
+      justify-content: center;
+    }
   }
 
   &__item {
     flex: 0 0 33.33%;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 41.66%;
+    }
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      max-width: 474px;
+    }
   }
 
   &__img-wrap {
