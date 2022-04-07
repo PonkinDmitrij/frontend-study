@@ -3,18 +3,49 @@
   padding: 250px 0;
   background: var(--black) url(../img/bg/hero-bg.jpg) center / cover no-repeat;
 
+  @media (max-width: $screen-xl) {
+    background-position: 25% center;
+  }
+
+  @media (max-width: $screen-md) {
+    min-height: 590px;
+    padding-top: 168px;
+    padding-bottom: 30px;
+    background-image: url(../img/bg/hero-bg-tablet.jpg);
+    background-position: center 1px;
+  }
+
+  @media (max-width: $screen-xs) {
+    background-position: 70% 1px;
+  }
+
   &__content {
     width: 490px;
     margin-left: 60px;
+
+    @media (max-width: $screen-md) {
+      width: 60%;
+      margin-left: 0;
+    }
   }
 
   &__title {
     margin: 0;
     margin-bottom: 10px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 20px;
+      font-weight: 400;
+    }
   }
 
   &__desc {
     margin: 0;
     margin-bottom: 25px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 58px;
+      line-height: 1.21;
+    }
   }
 }
