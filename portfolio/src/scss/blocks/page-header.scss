@@ -16,7 +16,9 @@
   }
 
   &__nav {
-    flex: 0 0 500px;
+    flex: 1 0 500px;
+    display: flex;
+    justify-content: flex-end;
     margin-left: auto;
     padding: 0 15px;
 
