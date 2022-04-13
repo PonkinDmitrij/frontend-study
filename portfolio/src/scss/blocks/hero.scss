@@ -27,6 +27,10 @@
       width: 60%;
       margin-left: 0;
     }
+
+    @media (max-width: $screen-xs) {
+      width: 80%;
+    }
   }
 
   &__title {
