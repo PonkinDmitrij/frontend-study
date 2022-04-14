@@ -18,25 +18,29 @@
 
   &__logo {
     flex: 0 0 50px;
+    margin-right: 20px;
   }
 
   &__nav {
     flex: 1 0 500px;
     display: flex;
     justify-content: flex-end;
-    margin-left: auto;
-    padding: 0 15px;
+    margin-right: 20px;
 
     @media (max-width: $screen-md) {
-      flex-basis: 10px;
+      flex-basis: 1px;
+      margin-right: 0;
     }
   }
 
   &__switch-lang {
     flex: 0 0 70px;
+    margin-right: 20px;
+  }
 
+  &__theme-switch {
     @media (max-width: $screen-md) {
-      margin-right: 30px;
+      margin-right: 20px;
     }
   }
 }
