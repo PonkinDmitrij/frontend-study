@@ -1,6 +1,7 @@
 .hero {
   min-height: 910px;
   padding: 250px 0;
+  color: var(--white);
   background: var(--black) url(../img/bg/hero-bg.jpg) center / cover no-repeat;
 
   @media (max-width: $screen-xl) {

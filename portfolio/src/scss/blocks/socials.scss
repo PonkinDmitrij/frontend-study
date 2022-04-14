@@ -19,6 +19,7 @@
     align-items: center;
 
     & path {
+      fill: currentColor;
       transition: fill var(--transition);
     }
 

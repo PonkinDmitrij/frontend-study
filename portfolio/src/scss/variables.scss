@@ -51,6 +51,12 @@
   --transition:                0.25s ease-out;
 }
 
+.theme-light {
+  --text-color:                var(--black);
+  --body-bg:                   var(--white);
+  --link-color:                var(--black);
+}
+
 
 
 // Breakpoints

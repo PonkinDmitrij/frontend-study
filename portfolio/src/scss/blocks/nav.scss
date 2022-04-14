@@ -10,7 +10,7 @@
     font-size: 35px;
     overflow-y: auto;
     overscroll-behavior-y: contain;
-    background-color: var(--black);
+    background-color: var(--body-bg);
     transform: translateX(100%);
     transition: transform var(--transition);
   }
