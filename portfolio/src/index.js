@@ -5,15 +5,14 @@ import './js/nav.js';
 import './js/portfolio.js';
 import { getTranslate } from './js/switch-lang.js';
 import './js/theme-switch.js';
-
-const rootElement = document.documentElement;
+import { THEME_LIGHT, ROOT_ELEMENT } from './js/constants.js';
 
 const getCurrentTheme = () => {
-  return rootElement.classList.contains('theme-light') ? 'light' : 'dark';
+  return ROOT_ELEMENT.classList.contains(THEME_LIGHT) ? 'light' : 'dark';
 };
 
 const setLocalStorage = () => {
-  const lang = rootElement.getAttribute('lang');
+  const lang = ROOT_ELEMENT.getAttribute('lang');
   const theme = getCurrentTheme();
 
   localStorage.setItem('lang', lang);
@@ -29,7 +28,7 @@ const getLocalStorage = () => {
   }
 
   if (theme && theme === 'light') {
-    rootElement.classList.add('theme-light');
+    ROOT_ELEMENT.classList.add('theme-light');
   }
 };
 
