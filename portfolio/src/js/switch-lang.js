@@ -1,4 +1,4 @@
-import { $ } from './utils.js';
+import { $, toggleClass } from './utils.js';
 import { translate } from './translate.js';
 import { ROOT_ELEMENT } from './constants.js';
 
@@ -7,12 +7,6 @@ const BTN_ACTIVE = `${SWITCH_LANG}__btn--active`;
 const TEXT_NODES = 'data-i18n';
 const switchLang = $(`.${SWITCH_LANG}`);
 const textNodes = document.querySelectorAll(`[${TEXT_NODES}]`);
-
-const toggleClass = (elem, className) => {
-  const current = $(`.${className}`);
-  current.classList.remove(className);
-  elem.classList.add(className);
-};
 
 const updateRootAttrLang = (lang) => ROOT_ELEMENT.setAttribute('lang', lang);
 

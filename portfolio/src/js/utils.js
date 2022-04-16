@@ -6,4 +6,10 @@ const getBrowserScrollbarWidth = () => {
   return window.innerWidth - document.documentElement.clientWidth;
 };
 
-export { $, getBrowserScrollbarWidth };
+const toggleClass = (elem, className) => {
+  const current = $(`.${className}`);
+  current.classList.remove(className);
+  elem.classList.add(className);
+};
+
+export { $, getBrowserScrollbarWidth, toggleClass };
