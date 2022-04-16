@@ -1,0 +1,32 @@
+.video {
+  padding-top: 75px;
+  padding-bottom: 25px;
+
+  @media (max-width: $screen-md) {
+    padding-top: 80px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 55px;
+    }
+  }
+
+  &__container {
+    @media (max-width: $screen-md) {
+      max-width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &__video-player {
+    --aspect-ratio: 1400 / 705;
+
+    @media (max-width: $screen-md) {
+      --aspect-ratio: 768 / 418;
+    }
+  }
+}

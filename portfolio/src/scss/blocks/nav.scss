@@ -1,0 +1,50 @@
+.nav {
+  @media (max-width: $screen-md) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    width: 620px;
+    height: 100vh;
+    padding: 124px 116px;
+    font-size: 35px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    background-color: var(--body-bg);
+    transform: translateX(100%);
+    transition: transform var(--transition);
+  }
+
+  @media (max-width: 620px) {
+    width: 100%;
+  }
+
+  @media (max-width: $screen-xs) {
+    padding: 80px 40px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 5px 15px;
+
+    @media (max-width: $screen-md) {
+      padding: 10px;
+    }
+  }
+
+  &--open {
+    transform: none;
+  }
+}

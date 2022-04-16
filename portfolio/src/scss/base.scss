@@ -1,0 +1,115 @@
+.page {
+  box-sizing: border-box;
+  min-width: 320px;
+  min-height: 100%;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  &__content {
+    flex-grow: 1;
+  }
+
+  &__footer-wrapper {
+    flex-shrink: 0;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-weight: 400;
+  text-align: left;
+  word-break: break-word;
+  color: var(--text-color);
+  background-color: var(--body-bg);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: var(--link-color);
+  background-color: transparent;
+  text-decoration: none;
+  transition: color var(--transition);
+
+  &:hover,
+  &:focus {
+    color: var(--link-color-hover);
+  }
+
+  &:active {
+    color: var(--link-color-active);
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-family-serif);
+  font-weight: 700;
+  font-style: normal;
+}
+
+// prettier-ignore
+h1 { font-size: var(--font-size-h1); } // prettier-ignore
+h2 { font-size: var(--font-size-h2); } // prettier-ignore
+h3 { font-size: var(--font-size-h3); } // prettier-ignore
+h4 { font-size: var(--font-size-h4); } // prettier-ignore
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.container {
+  max-width: var(--container-xxl);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: calc(var(--grid-gutter-width) / 2);
+  padding-left: calc(var(--grid-gutter-width) / 2);
+
+  @media (max-width: $screen-md) {
+    max-width: var(--container-md);
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(var(--grid-gutter-width) / -2);
+  margin-left: calc(var(--grid-gutter-width) / -2);
+}
+
+.col {
+  width: 100%;
+  min-height: 1px;
+  padding-right: calc(var(--grid-gutter-width) / 2);
+  padding-left: calc(var(--grid-gutter-width) / 2);
+}

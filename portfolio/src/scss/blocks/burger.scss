@@ -1,0 +1,77 @@
+.burger {
+  --toggler-part-height: 2px;
+  --toggler-part-bg: var(--white);
+
+  position: relative;
+  z-index: 20;
+  width: 50px;
+  height: 50px;
+  display: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (max-width: $screen-md) {
+    display: block;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: var(--toggler-part-height);
+    background-color: var(--toggler-part-bg);
+    transition: transform var(--transition), top var(--transition),
+      bottom var(--transition), background-color var(--transition);
+  }
+
+  &::before {
+    top: 11px;
+  }
+
+  &::after {
+    bottom: 11px;
+  }
+
+  > span {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: var(--toggler-part-height);
+    background-color: var(--toggler-part-bg);
+    transform: translateY(-50%);
+    transition: opacity var(--transition), background-color var(--transition);
+  }
+
+  &:hover > span,
+  &:hover::before,
+  &:hover::after {
+    background-color: var(--primary-color);
+  }
+
+  &:active > span,
+  &:active::before,
+  &:active::after {
+    background-color: var(--primary-color-dark);
+  }
+
+  &--close {
+    &::before {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      top: 50%;
+      transform: rotate(-45deg);
+    }
+
+    > span {
+      opacity: 0;
+    }
+  }
+}

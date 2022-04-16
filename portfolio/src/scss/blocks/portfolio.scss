@@ -1,0 +1,85 @@
+.portfolio {
+  padding-top: 100px;
+
+  @media (max-width: $screen-md) {
+    padding-top: 104px;
+  }
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 60px;
+
+    @media (max-width: $screen-lg) {
+      max-width: 450px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__btn-active {
+    color: var(--btn-color);
+    background-color: var(--btn-bg);
+    cursor: default;
+
+    &:hover,
+    &:focus {
+      color: var(--btn-color);
+    }
+
+    &:active {
+      background-color: var(--btn-bg);
+    }
+  }
+
+  &__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: $screen-lg) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    flex: 0 0 33.33%;
+
+    @media (max-width: $screen-lg) {
+      flex: 0 0 41.66%;
+    }
+
+    @media (max-width: $screen-md) {
+      flex: 0 0 100%;
+      max-width: 474px;
+    }
+  }
+
+  &__img-wrap {
+    --aspect-ratio: 450 / 560;
+
+    position: relative;
+    margin-bottom: 24px;
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

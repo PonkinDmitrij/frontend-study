@@ -1,0 +1,29 @@
+.switch-lang {
+  &__btn {
+    padding: 0;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    transition: color var(--transition);
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--primary-color-dark);
+    }
+
+    &--active {
+      color: var(--primary-color);
+      cursor: default;
+    }
+  }
+
+  &__slash {
+    padding: 0 4px;
+  }
+}

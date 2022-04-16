@@ -1,0 +1,46 @@
+.page-header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+  color: var(--white);
+
+  @media (min-width: ($screen-md + 1)) {
+    --link-color: var(--white);
+  }
+
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  &__logo {
+    flex: 0 0 50px;
+    margin-right: 20px;
+  }
+
+  &__nav {
+    flex: 1 0 500px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+
+    @media (max-width: $screen-md) {
+      flex-basis: 1px;
+      margin-right: 0;
+    }
+  }
+
+  &__switch-lang {
+    flex: 0 0 70px;
+    margin-right: 20px;
+  }
+
+  &__theme-switch {
+    @media (max-width: $screen-md) {
+      margin-right: 20px;
+    }
+  }
+}

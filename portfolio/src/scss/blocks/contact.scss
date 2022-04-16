@@ -1,0 +1,53 @@
+.contact {
+  min-height: 700px;
+  padding: 60px 0;
+  background: var(--black) url(../img/bg/contact-bg.jpg) center/cover no-repeat;
+
+  @media (max-width: $screen-md) {
+    background-image: url(../img/bg/contact-bg-tablet.jpg);
+    min-height: 600px;
+  }
+
+  @media (max-width: $screen-sm) {
+    background-position: 0 50%;
+  }
+
+  &__col {
+    width: 450px;
+    margin-left: auto;
+
+    @media (max-width: $screen-md) {
+      margin: 0 auto;
+      width: auto;
+      max-width: 450px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+  }
+
+  &__field {
+    width: 100%;
+    padding: 3px 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--primary-color);
+    font: inherit;
+    color: var(--primary-color);
+    background-color: rgb(0 0 0 / 0.5);
+
+    &::placeholder {
+      color: var(--primary-color);
+    }
+
+    &--textarea {
+      display: block;
+      height: 100px;
+      margin-bottom: 30px;
+      resize: vertical;
+    }
+  }
+}

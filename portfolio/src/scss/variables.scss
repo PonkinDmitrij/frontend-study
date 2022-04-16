@@ -1,0 +1,78 @@
+:root {
+  // Colors
+
+  --white:                     #ffffff;
+  --black:                     #000000;
+
+  --primary-color-dark:        #9f8c54;
+  --primary-color:             #bdae82;
+  --primary-color-light:       #d7ceb4;
+
+  --text-color:                var(--white);
+  --body-bg:                   var(--black);
+
+  --link-color:                var(--white);
+  --link-color-hover:          var(--primary-color);
+  --link-color-active:         var(--primary-color-dark);
+
+  --btn-bg:                    var(--primary-color);
+  --btn-color:                 var(--black);
+  --btn-border:                var(--primary-color);
+
+
+
+  // Typography
+
+  --font-size:                 20px;
+  --font-size-sm:              0.9em;
+
+  --font-size-h1:              60px;
+  --font-size-h2:              40px;
+  --font-size-h3:              28px;
+  --font-size-h4:              22px;
+
+  --line-height:               2;
+
+  --font-family:               'Inter', 'Helvetica Neue', 'Arial', sans-serif;
+  --font-family-serif:         'Merriweather', 'Times New Roman', 'Times', serif;
+
+
+
+  // Widths
+
+  --grid-gutter-width:         24px;
+  --container-xxl:             calc(1400px + var(--grid-gutter-width));
+  --container-md:              calc(644px + var(--grid-gutter-width));
+
+
+
+  // Different
+
+  --transition:                0.25s ease-out;
+}
+
+.theme-light {
+  --text-color:                var(--black);
+  --body-bg:                   var(--white);
+  --link-color:                var(--black);
+}
+
+
+
+// Breakpoints
+
+$screen-xxl:                   1440px;
+$screen-xl:                    1200px;
+$screen-lg:                    992px;
+$screen-md:                    768px;
+$screen-sm:                    576px;
+$screen-xs:                    480px;
+
+
+
+@media (max-width: $screen-md) {
+  :root {
+    --font-size-h1:              32px;
+    --font-size-h2:              32px;
+  }
+}

@@ -1,0 +1,90 @@
+.skills {
+  padding-top: 100px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 60px;
+
+    @media (max-width: $screen-md) {
+      margin-bottom: 65px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (max-width: $screen-sm) {
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    flex: 0 0 22.86%;
+
+    @media (max-width: $screen-xl) {
+      flex: 0 0 46.6%;
+      margin-bottom: 35px;
+    }
+
+    @media (max-width: $screen-sm) {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.skill {
+  position: relative;
+  padding: 100px 20px 10px;
+
+  @media (max-width: $screen-md) {
+    padding: 80px 10px 40px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -33px;
+    width: 66px;
+    height: 50px;
+    background: transparent center / contain no-repeat;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font: inherit;
+    font-weight: 700;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 18px;
+
+    @media (max-width: $screen-md) {
+      line-height: 1.25;
+    }
+  }
+
+  &--photography::before {
+    background-image: url(../img/bg/icon-camera.svg);
+  }
+
+  &--video::before {
+    background-image: url(../img/bg/icon-video.svg);
+  }
+
+  &--retouch::before {
+    background-image: url(../img/bg/icon-image.svg);
+  }
+
+  &--audio::before {
+    background-image: url(../img/bg/icon-mic.svg);
+  }
+}
