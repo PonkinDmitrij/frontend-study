@@ -1,0 +1,67 @@
+:root {
+  // Colors
+
+  --white:                     hsl(0, 0%, 100%);
+  --dodger-blue:               hsl(220, 98%, 61%);
+  --alabaster:                 hsl(0, 0%, 98%);
+  --snuff:                     hsl(236, 33%, 92%);
+  --mischka:                   hsl(233, 11%, 84%);
+  --manatee:                   hsl(236, 9%, 61%);
+  --mulled-wine:               hsl(235, 19%, 35%);
+  --cinder:                    hsl(235, 21%, 11%);
+  --ebony-clay:                hsl(235, 24%, 19%);
+  --periwinkle-gray:           hsl(234, 39%, 85%);
+  --waterloo:                  hsl(234, 11%, 52%);
+  --trout:                     hsl(233, 14%, 35%);
+  --bright-gray:               hsl(237, 14%, 26%);
+
+  --text-color:                var(--bright-gray);
+  --text-color-muted:          var(--manatee);
+  --body-bg:                   var(--alabaster);
+  --border-color:              var(--snuff);
+  --accent-color:              var(--dodger-blue);
+
+
+
+  // Typography
+
+  --font-size:                 18px;
+  --font-size-sm:              14px;
+  --line-height:               1.5;
+  --font-family:               'Josefin Sans', 'Helvetica Neue', 'Arial', sans-serif;
+
+
+
+  // Widths
+
+  --grid-gutter-width:         30px;
+  --content-width:             540px;
+  --container-width:           calc(var(--content-width) + var(--grid-gutter-width));
+
+
+
+  // Different
+
+  --border-radius:             5px;
+  --transition:                0.25s ease-out;
+  --gradient-direction:        to left;
+  --shadow:                    0 16px 50px 0 rgba(0, 0, 0, 0.18);
+}
+
+
+
+.theme-dark {
+  --text-color:                var(--mischka);
+  --text-color-muted:          var(--waterloo);
+  --body-bg:                   var(--cinder);
+  --border-color:              var(--bright-gray);
+  --gradient-direction:        to right;
+  --shadow:                    0 16px 50px 2px rgba(0, 0, 0, 0.8);
+}
+
+
+
+// Breakpoints
+
+$screen-sm:                    425px;
+$screen-xs:                    375px;
