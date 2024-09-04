@@ -1,0 +1,61 @@
+:root {
+  // Colors
+
+  --color-light-xl:                    #fff;
+  --color-light-l:                     #f6f6f6;
+  --color-light-s:                     #fafafa;
+  --color-dark-s:                      #cdcdcd;
+  --color-dark-m:                      #b2b2b2;
+  --color-dark-l:                      #545454;
+  --color-dark-xl:                     #4c4c4c;
+  --color-dark-2xl:                    #444;
+  --color-dark-3xl:                    #292929;
+  --color-primary:                     #f1cdb3;
+  --color-primary-light:               #fddcc4;
+  --gradient:                          #211f20;
+
+  --text-color:                        var(--color-dark-xl);
+  --heading-color:                     var(--color-dark-l);
+
+  --body-bg:                           var(--color-light-l);
+
+  --gradient-bg:                       radial-gradient(237.5% 111.8% at 0% 0%, rgb(91, 72, 58) 0%, rgb(38, 36, 37) 100%);
+
+  --btn-color:                         var(--color-dark-3xl);
+  --btn-bg:                            var(--color-primary);
+  --btn-bg-hover:                      var(--color-primary-light);
+  --btn-disabled:                      var(--color-dark-s);
+
+
+
+  // Typography
+
+  --font-size:                         15px;
+
+  --font-size-h1:                      44px;
+  --font-size-h2:                      44px;
+  --font-size-h3:                      35px;
+  --font-size-h4:                      20px;
+  --font-size-h5:                      15px;
+
+  --line-height:                       1.6;
+
+  --font-family-sans-serif:            'Arial', 'Roboto', 'Helvetica Neue', sans-serif;
+  --font-family-serif:                 'Georgia', 'Times New Roman', 'Times', serif;
+
+
+
+  // Widths
+
+  --grid-gutter-width:                 40px;
+
+  --container-lg:                      calc(1200px + var(--grid-gutter-width));
+  --container-md:                      calc(710px + var(--grid-gutter-width));
+}
+
+
+  // Breakpoints
+
+  $screen-lg:                          1280px;
+  $screen-md:                          768px;
+  $screen-sm:                          320px;
