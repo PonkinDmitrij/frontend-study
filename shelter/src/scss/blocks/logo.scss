@@ -1,0 +1,19 @@
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 7px;
+    font-family: var(--font-family-serif);
+    font-size: 32px;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    color: var(--color-primary);
+  }
+
+  &__subtitle {
+    font-size: 13px;
+    letter-spacing: 0.11em;
+    color: var(--color-light-xl);
+  }
+}
