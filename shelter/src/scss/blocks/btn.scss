@@ -1,0 +1,34 @@
+.btn {
+  display: inline-block;
+  padding: 13px 43px;
+  border: 2px solid var(--btn-bg);
+  text-align: center;
+  text-decoration: none;
+  font-family: var(--font-family-serif);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: 0.06em;
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px #2f7cc0;
+  }
+
+  &:hover {
+    background-color: var(--btn-bg-hover);
+  }
+
+  &:active {
+    transform: translateY(1px);
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+}
