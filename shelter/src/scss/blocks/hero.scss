@@ -1,0 +1,46 @@
+.hero {
+  --text-indent: 42px;
+
+  min-height: 908px;
+  padding-top: 173px;
+  background-image: url(/img/noise_transparent.png),
+    radial-gradient(
+      237.5% 111.8% at 0% 0%,
+      rgb(91, 72, 58) 0%,
+      rgb(38, 36, 37) 100%
+    );
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+  &__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__text {
+    flex: 0 0 38.4%;
+    padding-bottom: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: var(--text-indent);
+    color: var(--color-light-xl);
+  }
+
+  &__desc {
+    margin: 0;
+    margin-bottom: var(--text-indent);
+    color: var(--color-dark-s);
+  }
+
+  &__link {
+    margin-bottom: var(--text-indent);
+  }
+
+  &__img-wrap {
+    flex: 0 0 58.2%;
+    display: flex;
+    justify-content: center;
+  }
+}
