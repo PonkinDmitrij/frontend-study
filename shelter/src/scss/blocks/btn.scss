@@ -13,7 +13,9 @@
   background-color: var(--btn-bg);
   border-radius: 100px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition:
+    background-color 0.3s,
+    border-color 0.3s;
 
   &:focus-visible {
     outline: none;
@@ -21,6 +23,7 @@
   }
 
   &:hover {
+    border-color: var(--btn-bg-hover);
     background-color: var(--btn-bg-hover);
   }
 
