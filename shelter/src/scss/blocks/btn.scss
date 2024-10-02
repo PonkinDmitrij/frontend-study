@@ -31,6 +31,28 @@
     transform: translateY(1px);
   }
 
+  &:disabled {
+    color: var(--btn-disabled);
+    border-color: var(--btn-disabled);
+    background-color: transparent;
+    pointer-events: none;
+  }
+
+  &:disabled path {
+    fill: var(--btn-disabled);
+  }
+
+  &--disabled {
+    color: var(--btn-disabled);
+    border-color: var(--btn-disabled);
+    background-color: transparent;
+    pointer-events: none;
+  }
+
+  &--disabled path {
+    fill: var(--btn-disabled);
+  }
+
   &--transparent {
     background-color: transparent;
   }
