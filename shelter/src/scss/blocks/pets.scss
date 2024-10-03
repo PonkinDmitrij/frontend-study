@@ -1,0 +1,48 @@
+.pets {
+  padding: 80px 0 100px;
+  text-align: center;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 60px;
+    font-size: var(--font-size-h3);
+    letter-spacing: 0.06em;
+  }
+
+  &__carousel {
+    position: relative;
+    margin-bottom: 59px;
+    padding: 0 8.75%;
+  }
+
+  &__carousel-wrap {
+    position: relative;
+    z-index: 20;
+  }
+
+  &__carousel-inner {
+  }
+
+  &__carousel-item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__carousel-controls {
+    position: absolute;
+    z-index: 10;
+    top: calc(50% - 26px);
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__carousel-btn {
+    &--prev {
+    }
+
+    &--next {
+    }
+  }
+}
