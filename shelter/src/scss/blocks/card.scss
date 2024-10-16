@@ -20,6 +20,7 @@
     width: 270px;
     height: 270px;
     margin-bottom: 24px;
+    border-radius: 9px 9px 0 0;
   }
 
   &__img {
@@ -27,6 +28,7 @@
     width: inherit;
     height: inherit;
     object-fit: contain;
+    border-radius: 9px 9px 0 0;
   }
 
   &__name {
