@@ -42,17 +42,6 @@
     fill: var(--btn-disabled);
   }
 
-  &--disabled {
-    color: var(--btn-disabled);
-    border-color: var(--btn-disabled);
-    background-color: transparent;
-    pointer-events: none;
-  }
-
-  &--disabled path {
-    fill: var(--btn-disabled);
-  }
-
   &--transparent {
     background-color: transparent;
   }
@@ -68,5 +57,16 @@
     line-height: 1.15;
     color: var(--color-dark-3xl);
     background-color: transparent;
+  }
+
+  &--disabled {
+    color: var(--btn-disabled);
+    border-color: var(--btn-disabled);
+    background-color: transparent;
+    pointer-events: none;
+  }
+
+  &--disabled path {
+    fill: var(--btn-disabled);
   }
 }
